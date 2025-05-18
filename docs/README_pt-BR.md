@@ -1,5 +1,9 @@
 # Template Seguro e Modular para Scripts Bash
 
+> **Licença:** GNU AGPL-3.0-ou-posterior  
+> **Copyright (C) 2025 Rafael Mori**  
+> **Inspirado por helper-scripts de Adrelanos ([link](https://github.com/Whonix/helper-scripts))**
+
 Este repositório oferece um template robusto para escrever scripts Bash seguros, modulares e fáceis de manter. Inclui boas práticas para tratamento de erros, logging, saída colorida e configuração segura do ambiente. A estrutura foi pensada para evitar armadilhas comuns, como execução acidental como root, colisão de nomes de funções e uso incorreto de sourcing.
 
 ## Principais Características
@@ -10,16 +14,11 @@ Este repositório oferece um template robusto para escrever scripts Bash seguros
 - **Exemplo de Wrapper**: Demonstra como criar um ponto de entrada seguro, roteando argumentos e validando o ambiente.
 - **Utilitários Extensíveis**: Inclui utilitários para perguntas ao usuário, entrada de segredos e gerenciamento do buffer do terminal.
 
-## Exemplos de Uso
+## Exemplo de Uso
 
 ```bash
 # Uso do wrapper seguro
-./examples/secure_wrapper.sh arg1 arg2
-```
-
-```bash
-# Uso do wrapper seguro para executar um script específico
-./examples/secure_wrapper.sh 2 tree ../
+./examples/secure_wrapper.sh 2 arg1 arg2
 ```
 
 Isso irá direcionar a execução de forma segura para o script e função apropriados, garantindo todas as validações e logging.

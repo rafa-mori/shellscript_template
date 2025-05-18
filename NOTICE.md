@@ -1,13 +1,16 @@
 # NOTICE
 
-This software is licensed under the MIT License. Below are additional notes on usage and attribution:
+This software is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later).
 
-## Attribution Requirement (Optional):
-- When distributing or using this software, please provide credit to the original author(s) in one or more of the following ways:
-    - Retain the copyright notice: `Copyright (c) 2025 Rafael Mori`.
-    - Include a link to the original project repository or website.
+## Copyright
+Copyright (C) 2025 Rafael Mori
 
-## Acknowledgment:
-This project was developed with the goal of enhancing usability and providing open access to its features.
+## Inspiration
+Inspired by Adrelanos' helper-scripts (https://github.com/Whonix/helper-scripts)
 
-For further information about the license and terms of use, please refer to the `LICENSE` file included with this project.
+## License
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+See the LICENCE file for the full license text and terms of use.
+
+SPDX-License-Identifier: AGPL-3.0-or-later

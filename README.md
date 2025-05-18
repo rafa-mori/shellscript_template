@@ -1,5 +1,9 @@
 # Secure and Modular Bash Script Template
 
+> **License:** GNU AGPL-3.0-or-later  
+> **Copyright (C) 2025 Rafael Mori**  
+> **Inspired by Adrelanos' [helper-scripts](https://github.com/Whonix/helper-scripts)**
+
 This repository provides a robust template for writing secure, maintainable, and modular Bash scripts. It includes best practices for error handling, logging, colorized output, and safe environment setup. The structure is designed to help you avoid common pitfalls in shell scripting, such as accidental root execution, function name collisions, and improper sourcing.
 
 ## Key Features
@@ -14,12 +18,7 @@ This repository provides a robust template for writing secure, maintainable, and
 
 ```bash
 # Secure wrapper usage
-./examples/secure_wrapper.sh arg1 arg2
-```
-
-```bash
-# Secure wrapper usage to run a specific script
-./examples/secure_wrapper.sh 2 tree ../
+./examples/secure_wrapper.sh 2 arg1 arg2
 ```
 
 This will safely route execution to the appropriate script and function, ensuring all environment checks and logging are in place.
@@ -42,15 +41,3 @@ This will safely route execution to the appropriate script and function, ensurin
 ### Share with the Community
 
 Feel free to use this template as a base for your own scripts and share improvements or use cases with the community via Gist, DEV.to, or other platforms!
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Contributions are welcome! Please read the [CONTRIBUTING](docs/CONTRIBUTING.md) guide for details on how to contribute to this project.
-
-## Acknowledgments
-This project was developed with the goal of enhancing usability and providing open access to its features.
-
-## Contact
-For any questions or feedback, please reach out to the project maintainer at [my email](mailto:faelmori@gmail.com).

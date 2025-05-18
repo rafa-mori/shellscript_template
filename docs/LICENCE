@@ -1,21 +1,20 @@
-MIT License
+# LICENÇA
 
-Copyright (c) 2025 Rafael Mori
+Este projeto está licenciado sob a GNU Affero General Public License v3.0 ou posterior (AGPL-3.0-or-later).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright (C) 2025 Rafael Mori
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo sob os termos da GNU Affero General Public License conforme publicada pela Free Software Foundation, na versão 3 da Licença, ou (a seu critério) qualquer versão posterior.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Este programa é distribuído na esperança de que seja útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM DETERMINADO FIM. Veja a GNU Affero General Public License para mais detalhes.
+
+Você deve ter recebido uma cópia da GNU Affero General Public License junto com este programa. Caso não tenha recebido, veja <http://www.gnu.org/licenses/>.
+
+Inspirado por helper-scripts de Adrelanos (https://github.com/Whonix/helper-scripts)
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+---
+
+O texto completo da licença AGPL-3.0 pode ser encontrado em:
+https://www.gnu.org/licenses/agpl-3.0.html

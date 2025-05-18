@@ -1,56 +1,43 @@
-# Secure and Modular Bash Script Template
+# Template Seguro e Modular para Scripts Bash
 
-This repository provides a robust template for writing secure, maintainable, and modular Bash scripts. It includes best practices for error handling, logging, colorized output, and safe environment setup. The structure is designed to help you avoid common pitfalls in shell scripting, such as accidental root execution, function name collisions, and improper sourcing.
+> **Licença:** GNU AGPL-3.0-ou-posterior  
+> **Copyright (C) 2025 Rafael Mori**  
+> **Inspirado por helper-scripts de Adrelanos ([link](https://github.com/Whonix/helper-scripts))**
 
-## Key Features
+Este repositório oferece um template robusto para escrever scripts Bash seguros, modulares e fáceis de manter. Inclui boas práticas para tratamento de erros, logging, saída colorida e configuração segura do ambiente. A estrutura foi pensada para evitar armadilhas comuns, como execução acidental como root, colisão de nomes de funções e uso incorreto de sourcing.
 
-- **Security First**: Prevents execution as root or via sudo, and enforces safe shell options (`errexit`, `nounset`, `pipefail`).
-- **Modular Design**: Functions are prefixed and exported selectively to avoid polluting the global namespace.
-- **Logging & Colors**: Built-in logger with color support, background detection, and high-contrast output for better UX.
-- **Wrapper Example**: Shows how to create a secure entry point for your scripts, with argument routing and environment validation.
-- **Extensible Utilities**: Includes utilities for user prompts, secret input, and terminal buffer management.
+## Principais Características
 
-## Example Usage
+- **Segurança em Primeiro Lugar**: Impede execução como root ou via sudo e aplica opções seguras do shell (`errexit`, `nounset`, `pipefail`).
+- **Design Modular**: Funções com prefixo e exportação seletiva para evitar poluir o namespace global.
+- **Logging & Cores**: Logger integrado com suporte a cores, detecção de fundo do terminal e contraste alto para melhor experiência.
+- **Exemplo de Wrapper**: Demonstra como criar um ponto de entrada seguro, roteando argumentos e validando o ambiente.
+- **Utilitários Extensíveis**: Inclui utilitários para perguntas ao usuário, entrada de segredos e gerenciamento do buffer do terminal.
+
+## Exemplo de Uso
 
 ```bash
-# Secure wrapper usage
-./examples/secure_wrapper.sh arg1 arg2
+# Uso do wrapper seguro
+./examples/secure_wrapper.sh 2 arg1 arg2
 ```
 
-```bash
-# Secure wrapper usage to run a specific script
-./examples/secure_wrapper.sh 2 tree ../
-```
+Isso irá direcionar a execução de forma segura para o script e função apropriados, garantindo todas as validações e logging.
 
-This will safely route execution to the appropriate script and function, ensuring all environment checks and logging are in place.
+## Como Usar
 
-## How to Use
+1. **Copie os scripts template** para seu projeto.
+2. **Substitua todos os prefixos `myname`** pelo nome do seu script.
+3. **Personalize o wrapper** conforme sua necessidade.
+4. **Aproveite o logger e utilitários de cor** para saída consistente e tratamento de erros.
 
-1. **Copy the template scripts** to your project.
-2. **Replace all `myname` prefixes** with your script's name.
-3. **Customize the wrapper** to fit your use case.
-4. **Leverage the logger and color utilities** for consistent output and error handling.
+## Por que usar este template?
 
-## Why Use This Template?
-
-- Avoids common shell scripting mistakes.
-- Makes your scripts easier to maintain and extend.
-- Provides a professional foundation for automation, DevOps, and CI/CD tasks.
+- Evita erros comuns em shell script.
+- Facilita manutenção e extensão dos scripts.
+- Fornece uma base profissional para automação, DevOps e tarefas de CI/CD.
 
 ---
 
-### Share with the Community
+### Compartilhe com a Comunidade
 
-Feel free to use this template as a base for your own scripts and share improvements or use cases with the community via Gist, DEV.to, or other platforms!
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Contributions are welcome! Please read the [CONTRIBUTING](docs/CONTRIBUTING.md) guide for details on how to contribute to this project.
-
-## Acknowledgments
-This project was developed with the goal of enhancing usability and providing open access to its features.
-
-## Contact
-For any questions or feedback, please reach out to the project maintainer at [my email](mailto:faelmori@gmail.com).
+Sinta-se à vontade para usar este template como base para seus próprios scripts e compartilhar melhorias ou casos de uso com a comunidade via Gist, DEV.to ou outras plataformas!
