@@ -1,43 +1,43 @@
-# Template Seguro e Modular para Scripts Bash
+# Secure and Modular Bash Script Template
 
-> **Licença:** GNU AGPL-3.0-ou-posterior  
+> **License:** GNU AGPL-3.0-or-later  
 > **Copyright (C) 2025 Rafael Mori**  
-> **Inspirado por helper-scripts de Adrelanos ([link](https://github.com/Whonix/helper-scripts))**
+> **Inspired by Adrelanos' helper-scripts for Whonix ([link to repository](https://github.com/Whonix/helper-scripts))**
 
-Este repositório oferece um template robusto para escrever scripts Bash seguros, modulares e fáceis de manter. Inclui boas práticas para tratamento de erros, logging, saída colorida e configuração segura do ambiente. A estrutura foi pensada para evitar armadilhas comuns, como execução acidental como root, colisão de nomes de funções e uso incorreto de sourcing.
+This repository provides a robust template for writing secure, modular, and maintainable Bash scripts. It includes best practices for error handling, logging, colored output, and secure environment configuration. The structure is designed to avoid common pitfalls, such as accidental execution as root, function name collisions, and improper sourcing.
 
-## Principais Características
+## Key Features
 
-- **Segurança em Primeiro Lugar**: Impede execução como root ou via sudo e aplica opções seguras do shell (`errexit`, `nounset`, `pipefail`).
-- **Design Modular**: Funções com prefixo e exportação seletiva para evitar poluir o namespace global.
-- **Logging & Cores**: Logger integrado com suporte a cores, detecção de fundo do terminal e contraste alto para melhor experiência.
-- **Exemplo de Wrapper**: Demonstra como criar um ponto de entrada seguro, roteando argumentos e validando o ambiente.
-- **Utilitários Extensíveis**: Inclui utilitários para perguntas ao usuário, entrada de segredos e gerenciamento do buffer do terminal.
+- **Security First**: Prevents execution as root or via sudo and applies safe shell options (`errexit`, `nounset`, `pipefail`).
+- **Modular Design**: Functions with prefixes and selective export to avoid polluting the global namespace.
+- **Logging & Colors**: Integrated logger with color support, terminal background detection, and high contrast for a better experience.
+- **Wrapper Example**: Demonstrates how to create a secure entry point, routing arguments and validating the environment.
+- **Extensible Utilities**: Includes utilities for user prompts, secret input, and terminal buffer management.
 
-## Exemplo de Uso
+## Usage Example
 
 ```bash
-# Uso do wrapper seguro
+# Using the secure wrapper
 ./examples/secure_wrapper.sh 2 arg1 arg2
 ```
 
-Isso irá direcionar a execução de forma segura para o script e função apropriados, garantindo todas as validações e logging.
+This will safely route execution to the appropriate script and function, ensuring all validations and logging.
 
-## Como Usar
+## How to Use
 
-1. **Copie os scripts template** para seu projeto.
-2. **Substitua todos os prefixos `myname`** pelo nome do seu script.
-3. **Personalize o wrapper** conforme sua necessidade.
-4. **Aproveite o logger e utilitários de cor** para saída consistente e tratamento de erros.
+1. **Copy the template scripts** to your project.
+2. **Replace all `myname` prefixes** with your script name.
+3. **Customize the wrapper** as needed.
+4. **Take advantage of the logger and color utilities** for consistent output and error handling.
 
-## Por que usar este template?
+## Why use this template?
 
-- Evita erros comuns em shell script.
-- Facilita manutenção e extensão dos scripts.
-- Fornece uma base profissional para automação, DevOps e tarefas de CI/CD.
+- Avoids common errors in shell scripting.
+- Eases maintenance and extension of scripts.
+- Provides a professional base for automation, DevOps, and CI/CD tasks.
 
 ---
 
-### Compartilhe com a Comunidade
+### Share with the Community
 
-Sinta-se à vontade para usar este template como base para seus próprios scripts e compartilhar melhorias ou casos de uso com a comunidade via Gist, DEV.to ou outras plataformas!
+Feel free to use this template as a basis for your own scripts and share improvements or use cases with the community via Gist, DEV.to, or other platforms!
