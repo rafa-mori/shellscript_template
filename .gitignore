@@ -1,0 +1,11 @@
+files/
+files/LICENSE
+files/README.md
+files/runners.txt
+files/docs/CASE_RUNNERS_AZURE_K8S.md
+files/docs/CASE_RUNNERS_PARALLEL.md
+files/docs/COMPARATIVO.md
+files/examples/runners_azure_k8s.sh
+files/examples/runners_parallel.sh
+bkp/
+docs_COMPARATIVO.md
